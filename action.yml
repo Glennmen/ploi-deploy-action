@@ -1,0 +1,15 @@
+name: 'Ploi Deploy Action'
+description: 'Deploy your application to Ploi with Github actions'
+author: 'Glennmen'
+branding:
+  icon: upload-cloud
+  color: blue
+inputs:
+  webhook_url:
+    description: 'The Deploy webhook URL'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  env:
+    WEBHOOK_URL: ${{ inputs.webhook_url }}
