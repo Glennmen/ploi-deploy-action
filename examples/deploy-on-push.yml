@@ -1,0 +1,22 @@
+name: 'Deploy on push'
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  ploi-deploy:
+    name: 'Ploi Deploy'
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository to the GitHub Actions runner
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      # Trigger Ploi deploy webhook
+      - name: Ploi Deplou
+        uses: Glennmen/ploi-deploy-action@v1
+        with:
+          webhook_url: ${{ secrets.WEBHOOK_URL }}

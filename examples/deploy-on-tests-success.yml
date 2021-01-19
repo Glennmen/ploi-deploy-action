@@ -1,0 +1,30 @@
+name: 'Deploy on tests success'
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  ploi-deploy:
+    name: 'Ploi Deploy'
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository to the GitHub Actions runner
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      # Install dependencies using Composer CLI
+      - name: Install dependencies
+        uses: php-actions/composer@v5
+
+      # Run PHPUnit tests in your project
+      - name: Run PHPUnit
+        uses: php-actions/phpunit@v2
+
+      # Trigger Ploi deploy webhook
+      - name: Ploi Deplou
+        uses: Glennmen/ploi-deploy-action@v1
+        with:
+          webhook_url: ${{ secrets.WEBHOOK_URL }}
