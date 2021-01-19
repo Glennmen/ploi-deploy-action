@@ -8,4 +8,4 @@
 
 ## Reporting a Vulnerability
 
-In case of finding a vulnerability, contact <security@glennmen.dev>
+In case of finding a vulnerability, contact <mailto:security@glennmen.dev>
