@@ -24,7 +24,7 @@ jobs:
         uses: php-actions/phpunit@v2
 
       # Trigger Ploi deploy webhook
-      - name: Ploi Deploy
-        uses: Glennmen/ploi-deploy-action@v1
+      - name: Deploy
+        uses: Glennmen/ploi-deploy-action@v1.1.0
         with:
           webhook_url: ${{ secrets.WEBHOOK_URL }}
