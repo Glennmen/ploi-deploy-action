@@ -7,9 +7,21 @@ branding:
 inputs:
   webhook_url:
     description: 'The Deploy webhook URL'
-    required: true
+    required: false
+  api_token:
+    description: 'Ploi API token'
+    required: false
+  server_id:
+    description: 'Ploi Server ID'
+    required: false
+  site_id:
+    description: 'Ploi Site ID'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
   env:
     WEBHOOK_URL: ${{ inputs.webhook_url }}
+    API_TOKEN: ${{ inputs.api_token }}
+    SERVER_ID: ${{ inputs.server_id }}
+    SITE_ID: ${{ inputs.site_id }}
