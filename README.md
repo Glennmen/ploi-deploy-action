@@ -33,6 +33,8 @@ Server ID can be found in your servers Settings tab.
 
 **Required** Ploi Site ID.
 
+Site ID can be found in your sites Settings tab.
+
 ## Basic workflows
 
 ### Webhook deployment
