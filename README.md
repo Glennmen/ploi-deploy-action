@@ -59,7 +59,7 @@ jobs:
 
       # Trigger Ploi deploy webhook
       - name: Deploy
-        uses: Glennmen/ploi-deploy-action@v1.1.0
+        uses: Glennmen/ploi-deploy-action@v1.2.0
         with:
           webhook_url: ${{ secrets.WEBHOOK_URL }}
 ```
@@ -86,7 +86,7 @@ jobs:
 
       # Trigger Ploi deploy api
       - name: Deploy
-        uses: Glennmen/ploi-deploy-action@v1.1.0
+        uses: Glennmen/ploi-deploy-action@v1.2.0
         with:
           api_token: ${{ secrets.API_TOKEN }}
           server_id: 1
