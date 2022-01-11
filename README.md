@@ -12,7 +12,7 @@ This action supports both the `Deploy webhook URL` found in the site repository 
 **Required** Deploy webhook URL.
 _It is advised to use Github secrets to keep your webhook URL private._
 
-The webhook url can be found in your sites Settings tab.
+The webhook url can be found in your sites Repository tab.
 
 ### API deployment
 
