@@ -17,7 +17,7 @@ jobs:
 
       # Execute Codacy Analysis CLI and generate a SARIF output with the security issues identified during the analysis
       - name: Run Codacy Analysis CLI
-        uses: codacy/codacy-analysis-cli-action@v4.2.0
+        uses: codacy/codacy-analysis-cli-action@v4.3.0
         with:
           output: results.sarif
           format: sarif
