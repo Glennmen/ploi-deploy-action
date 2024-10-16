@@ -45,7 +45,7 @@ name: 'Deploy on push'
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   ploi-deploy:
@@ -72,7 +72,7 @@ name: 'Deploy on push'
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   ploi-deploy:
