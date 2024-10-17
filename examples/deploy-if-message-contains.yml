@@ -3,7 +3,7 @@ name: 'Deploy if message contains'
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   ploi-deploy:
